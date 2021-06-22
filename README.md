@@ -7,16 +7,17 @@
 <code><img height="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png"></code>
 <code><img height="20" src="https://hackagenda.com.br/wp-content/uploads/2021/03/nlw.png"></code>
 
-<h1 align="center">
-  <img alt="letmeask" title="Letmeask" src="./figma/logo.png" />
-</h1>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
-
+ <img alt="letmeask" title="Letmeask" src="https://raw.githubusercontent.com/AndersonAlvesCoelho/letmeask/c9a7a1b675b2c67a27fe5612e972db483f879dee/src/assets/images/logo.svg" />
 </p>
+
+<p align="center">
+<img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+</p>
+
 <div align="center">
-  <img src="./figma/Home.png" />
+  <img src="https://raw.githubusercontent.com/AndersonAlvesCoelho/letmeask/c9a7a1b675b2c67a27fe5612e972db483f879dee/src/assets/images/capa.svg" />
 </div>
 
 ## 💡 Sobre o Projeto

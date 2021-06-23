@@ -1,4 +1,4 @@
-import {ButtonHTMLAttributes} from 'react';
+import {ButtonHTMLAttributes} from 'react'; // importanta dodas  as props de um tag html
 
 import '../styles/button.scss'
 

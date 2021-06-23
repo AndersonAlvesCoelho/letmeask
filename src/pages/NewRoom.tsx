@@ -9,6 +9,7 @@ import illustration from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
 
 import '../styles/auth.scss';
+import { useEffect } from 'react';
 
 export function NewRoom() {
 
@@ -33,7 +34,10 @@ export function NewRoom() {
     history.push(`/rooms/${firebaseRoom.key}`);
   }
 
-
+  //returna usuario para home se n estiver logado
+  useEffect(() => {
+    if(!user) history.push('/');
+  }, [user, history]);
 
   return (
     <div id="page-auth">

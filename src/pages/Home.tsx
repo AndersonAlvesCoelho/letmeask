@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
+import { useTheme } from '../hooks/useTheme';
 import { database } from '../services/firebase';
 
 import illustration from '../assets/images/illustration.svg';
@@ -16,6 +17,9 @@ export function Home() {
   const history = useHistory();
 
   const { user, signInWithGoogle } = useAuth();
+  const { theme, toggleTheme } = useTheme();
+
+
   const [roomCode, setRoomCode] = useState('');
   //LOGIN
   async function handleCreateRoom() {
@@ -56,6 +60,11 @@ export function Home() {
 
       <main>
         <div className="main-content">
+
+          {/* //MUDAR O TEMA   */}
+          {/* <h1>{theme}</h1>
+          <button onClick={toggleTheme}>{theme}</button> */}
+
           <img src={logoImg} alt="Letmeask" />
           <button onClick={handleCreateRoom} className="create-rom">
             <img src={googleIconImg} alt="Logo da Google" />

@@ -58,6 +58,10 @@ Você pode visualiza o layout do projeto pelo [figma](https://www.figma.com/file
 - [x] Controller de usuarios
 - [x] Respondendo e criando perguntas
 - [x] Crindo hook useRom
+
+Bônus
+- [x] Contexto para mudar o tema
+
 ---
 
 ## 📣 O que é Next Level Week?

@@ -23,6 +23,7 @@ export const AuthContext = createContext({} as AuthContextProps);
 export function AuthContextProver(prosp: AuthContextProviderProps) {
 
   const [user, setUser] = useState<User>();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     //vrificando se o usuario esta logado
@@ -39,6 +40,7 @@ export function AuthContextProver(prosp: AuthContextProviderProps) {
           name: displayName,
           avatar: photoURL
         })
+        setLoading(false);
       }
     })
 
@@ -68,6 +70,8 @@ export function AuthContextProver(prosp: AuthContextProviderProps) {
     }
   }
 
+  if (loading) return <h1>Carregando</h1>;
+  
   return (
     <AuthContext.Provider value={{ user, signInWithGoogle }}>
       {prosp.children}

@@ -53,11 +53,18 @@ Você pode visualiza o layout do projeto pelo [figma](https://www.figma.com/file
 - [x] Criação de sala
 - [x] Roteamento e navegação
 
-2º dia
+3º dia
 - [x] Criação de sala
 - [x] Controller de usuarios
 - [x] Respondendo e criando perguntas
 - [x] Crindo hook useRom
+
+4º dia
+- [x] Entrutura de perguntas
+- [x] Hook useRoom
+- [x] Funcionalidade de like
+- [x] Controle de sala (admin)
+- [x] Controle de perguntas
 
 Bônus
 - [x] Contexto para mudar o tema

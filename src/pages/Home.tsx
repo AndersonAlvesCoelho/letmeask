@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import { Button } from '../components/Button';
 import { useAuth } from '../hooks/useAuth';
-import { useTheme } from '../hooks/useTheme';
+// import { useTheme } from '../hooks/useTheme';
 import { database } from '../services/firebase';
 
 import illustration from '../assets/images/illustration.svg';
@@ -17,7 +17,7 @@ export function Home() {
   const history = useHistory();
 
   const { user, signInWithGoogle } = useAuth();
-  const { theme, toggleTheme } = useTheme();
+  // const { theme, toggleTheme } = useTheme();
 
 
   const [roomCode, setRoomCode] = useState('');

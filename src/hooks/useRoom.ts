@@ -10,8 +10,8 @@ type FirebaseQuestions = Record<string, {
     avatar: string;
   }
   content: string;
-  isHighlighted: string;
-  isAnswered: string;
+  isAnswered: boolean;
+  isHighlighted: boolean;
   likes: Record<string, {
     authorId: string;
   }>;
@@ -25,13 +25,11 @@ type QuestuionType = {
     avatar: string;
   }
   content: string;
-  isHighlighted: string;
-  isAnswered: string;
+  isAnswered: boolean;
+  isHighlighted: boolean;
   likeCount: number;
   likeId: string | undefined;
 }
-
-
 
 export function useRoom(roomId: string) {
   const { user } = useAuth();
@@ -58,6 +56,9 @@ export function useRoom(roomId: string) {
           likeId: Object.entries(value.likes ?? {}).find(([key, like]) => like.authorId === user?.id)?.[0]
         }
       })
+     
+      //ORDENA OS LIKES
+      // const questionsSorted = parsedQuestions.sort((a, b) => a.likeCount - b.likeCount)
       setTitle(databaseRoom.title)
       setQuestions(parsedQuestions);
     })

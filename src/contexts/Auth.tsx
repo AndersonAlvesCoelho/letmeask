@@ -23,7 +23,7 @@ export const AuthContext = createContext({} as AuthContextProps);
 export function AuthContextProver(prosp: AuthContextProviderProps) {
 
   const [user, setUser] = useState<User>();
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     //vrificando se o usuario esta logado
@@ -40,7 +40,7 @@ export function AuthContextProver(prosp: AuthContextProviderProps) {
           name: displayName,
           avatar: photoURL
         })
-        setLoading(false);
+        // setLoading(false);
       }
     })
 
